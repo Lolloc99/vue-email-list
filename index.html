@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axios Mail</title>
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
 
     <!-- Axios -->
     <script
@@ -24,6 +22,16 @@
     
     <div id="root">
 
+        <!-- Esercizio base (stampa un'elemento alla volta) -->
+        <h1>Base</h1>
+        <ul>
+            <li v-for="mail in mailsArray">
+                {{mail}}
+            </li>
+        </ul>
+
+        <!-- Esercizio con bonus (stampa gli elementi solo quando tutti pronti) -->
+        <h1>Bonus</h1>
         <ul v-if="mailsArray.length === 10">
             <li v-for="mail in mailsArray">
                 {{mail}}
