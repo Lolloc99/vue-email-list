@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidMk</title>
+    <title>Axios Mail</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,10 +24,14 @@
     
     <div id="root">
 
-        
+        <ul>
+            <li v-for="mail in mailsArray">
+                {{mail}}
+            </li>
+        </ul>
 
     </div>
 
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

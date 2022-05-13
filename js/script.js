@@ -13,8 +13,22 @@ const app = new Vue (
         el : "#root",
         // Data
         data : {
-            
+            mailsArray: [],
+            email: "",
         },
+        
+        // Created
+        created() {
+            for (let i = 0; i < 10; i++) {
+                axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+                .then((resp) => {
+                    const mail = resp.data.response;
+                    this.email = mail;
+                    this.mailsArray.push(this.email);
+                })
+            }
+        },
+        
         // Methods
         methods : {
             
