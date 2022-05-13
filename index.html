@@ -24,7 +24,7 @@
     
     <div id="root">
 
-        <ul>
+        <ul v-if="mailsArray.length === 10">
             <li v-for="mail in mailsArray">
                 {{mail}}
             </li>
